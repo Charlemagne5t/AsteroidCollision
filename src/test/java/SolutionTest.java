@@ -28,4 +28,13 @@ public class SolutionTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void asteroidCollisionTest4() {
+        int[] asteroids = {-2,1,-2,-1};
+        int[] expected = {-2,-2,-1};
+        int[] actual = new Solution().asteroidCollision(asteroids);
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
